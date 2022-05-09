@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
+
+/* 所有的 li 的前面的点都去掉 */
+li{
+  list-style: none;
+}
+
+header{
+  width: 100vw;
+  height: 85px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 80px 0;
+}
+
+.logo>ul{
+  width: 200px;
+  height: 100%;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: #3498db;
+  /* 鼠标变为小手 */
+  cursor: pointer;
+}
+
+.logo>ul li {
+  transition: 1s;
+}
+/* logo的第一个单词 */
+.logo>ul>li:nth-of-type(1):hover{
+  transform: rotate(360deg);
+  color: aqua;
+}
+/* logo的第二个单词 */
+.logo>ul>li:nth-of-type(2):hover{
+  transform: scale(1.2);
+  color: #f1c40f;
+}
+/* logo的第三个单词 */
+.logo>ul>li:nth-of-type(3):hover{
+  transform: rotate(360deg);
+  color: #60a3bc;
+}
+
+/* 导航栏 */
+.changeBox{
+  width: 440px;
+  height: 100%;
+  display: flex;
+}
+
+.changeBox>ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
